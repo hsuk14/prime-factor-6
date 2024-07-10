@@ -17,3 +17,7 @@ class TestPrimeFactors(TestCase):
         expected_result = [2]
         self.assertEqual(expected_result, self.sut.of(2))
 
+    def test_of_3(self):
+        expected_result = [3]
+        self.assertEqual(expected_result, self.sut.of(3))
+
