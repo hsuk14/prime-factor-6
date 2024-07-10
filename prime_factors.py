@@ -1,3 +1,3 @@
 class PrimeFactors:
-    def extract(self, param):
-        pass
+    def of(self, param):
+        return 1
