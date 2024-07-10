@@ -21,3 +21,22 @@ class TestPrimeFactors(TestCase):
         expected_result = [3]
         self.assertEqual(expected_result, self.sut.of(3))
 
+    def test_of_4(self):
+        expected_result = [2, 2]
+        self.assertEqual(expected_result, self.sut.of(4))
+
+    def test_of_6(self):
+        expected_result = [2, 3]
+        self.assertEqual(expected_result, self.sut.of(6))
+
+    def test_of_9(self):
+        expected_result = [3, 3]
+        self.assertEqual(expected_result, self.sut.of(9))
+
+    def test_of_15(self):
+        expected_result = [3, 5]
+        self.assertEqual(expected_result, self.sut.of(15))
+
+    def test_of_2730(self):
+        expected_result = [2, 3, 5, 7, 13]
+        self.assertEqual(expected_result, self.sut.of(2730))
